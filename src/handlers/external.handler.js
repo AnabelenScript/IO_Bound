@@ -1,4 +1,4 @@
-const externalService = require('../services/external.service');
+const externalService = require('../services/external_service');
 
 exports.aggregate = async (req, res) => {
   try {

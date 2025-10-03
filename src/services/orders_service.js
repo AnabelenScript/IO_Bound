@@ -1,6 +1,6 @@
 const db = require('../../config/db');
 const path = require('path');
-const fileStorage = require('./fileStorage.service');
+const fileStorage = require('../services/filesStorage_service');
 const workerFactory = require('../utils/workerFactory');
 const { STORAGE } = require('../../config/config');
 
