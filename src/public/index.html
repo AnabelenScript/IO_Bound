@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🍞 Panadería API - Visual</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6e3;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #ffcc66;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #ffb347;
+    }
+    pre {
+      text-align: left;
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      max-height: 400px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🍞 Panadería API</h1>
+  <p>Prueba visual de los endpoints REST</p>
+
+  <button onclick="getOrders()">Ver Pedidos</button>
+  <button onclick="addOrder()">Agregar Pedido</button>
+  <button onclick="getStream()">Ver Stream</button>
+  <button onclick="getExternal()">Datos Externos</button>
+
+  <pre id="output">Esperando resultados...</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
