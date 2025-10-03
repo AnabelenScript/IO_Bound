@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
     res.end(file);
   } else {
     // Pasar al router para manejar API REST
-    router(req, res);
+    router.route(req, res); // <-- Cambiado aquí
   }
 });
 
