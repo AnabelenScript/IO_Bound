@@ -1,0 +1,78 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    
+    pre {
+      text-align: left;
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      max-height: 400px;
+      overflow: auto;
+    }
+
+
+    .header{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      gap: 40px;
+      padding: 0 60px;
+      box-sizing: border-box;
+    }
+
+    .option-buttons{
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+    }
+
+    .option-buttons button{
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: transparent;
+    }
+
+    .option-buttons .enlace {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  color: black;
+  font-weight: 500;
+}
+
+.option-buttons .enlace::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.option-buttons .enlace:hover::after {
+  transform: scaleX(1);
+}

@@ -2,48 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>🍞 Panadería API - Visual</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fdf6e3;
-      color: #333;
-      text-align: center;
-      padding: 20px;
-    }
-    button {
-      margin: 5px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      background: #ffcc66;
-      font-weight: bold;
-    }
-    button:hover {
-      background: #ffb347;
-    }
-    pre {
-      text-align: left;
-      margin-top: 20px;
-      padding: 15px;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      max-height: 400px;
-      overflow: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Panadería</title>
 </head>
 <body>
-  <h1>🍞 Panadería API</h1>
-  <p>Prueba visual de los endpoints REST</p>
-
-  <button onclick="getOrders()">Ver Pedidos</button>
-  <button onclick="addOrder()">Agregar Pedido</button>
-  <button onclick="getStream()">Ver Stream</button>
-  <button onclick="getExternal()">Datos Externos</button>
-
+  <header class="header">
+  <h1>Panadería</h1>
+  <div class="option-buttons">
+  <button onclick="getOrders()" class="enlace">Ver Pedidos</button>
+  <button onclick="addOrder()" class="enlace">Agregar Pedido</button>
+  <button onclick="getStream()" class="enlace">Ver Stream</button>
+  <button onclick="getExternal()" class="enlace">Datos Externos</button></div>
+</header>
   <pre id="output">Esperando resultados...</pre>
 
   <script src="app.js"></script>
